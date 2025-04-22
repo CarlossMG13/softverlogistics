@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softver Logistics</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white">
+
+    <!--Inicia nav-->
+    <nav class="flex justify-between items-center py-6 px-4 lg:px-8 text-white">
+        <div class="logo">
+            <img class="w-24 lg:w-32" src="img/logo.png" alt="Logo">
+        </div>
+        <div class="hidden lg:flex lg:text-center">
+            <ul class="flex gap-12 text-white">
+                <li><a href="#" class="transition hover:text-[#0056D2]">Inicio</a></li>
+                <li><a href="#services" class="transition hover:text-[#0056D2]">Softver</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-4 items-center">
+            <a href="http://logistic.softver.mx/vista/login/login.html"  class="px-5 py-2 text-[#0056D2] border border-[#0056D2] rounded-md font-bold transition hover:bg-[#0056D2] hover:text-white" target="_blank">Log-in</a>
+            <a href="#form" class="px-5 py-2 bg-[#0056D2] text-white rounded-md font-bold transition hover:scale-105">Contáctanos</a>
+        </div>
+    </nav>
+    <!--Termina nav-->
+
+    <!--Inicia banner-->
+    <section class="flex justify-center items-center flex-col text-center h-[40vh] | xl:h-[50vh] | 2xl:h-[60vh]">
+        <h1 class="text-4xl font-bold mb-5 | lg:text-6xl | 2xl:text-8xl">SOFTVER LOGISTICS</h1>
+        <p class="px-5 mb-10 | lg:text-2xl lg:px-10">Somos la mejor opción para tener un control total de tu empresa de transporte y/o logística. Gestiona con eficiencia, elige Softver Logistics.</p>
+        <div class="flex gap-5 [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-lg [&>a]:transition | lg:[&>a]:px-10 lg:[&>a]:py-3" >
+            <a href="#vid" class="bg-[#FFFFFF] text-black hover:bg-black hover:text-white hover:border">Conoce más</a>
+            <a href="#form" class="border hover:bg-white hover:text-black">Cuéntanos tu proyecto</a>
+        </div>
+    </section>
+    <!--Termina banner-->
+
+    <!--Inicia video sect-->
+    <section id="vid" class="flex justify-center items-center flex-col text-center h-[60vh] bg-[#0F101E]">
+        <iframe width="330" height="250" src="https://www.youtube.com/embed/MnrN0l2422o?si=LDFdrzYfTquro6VL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mb-10 | md:w-[450px] md:h-[300px] | lg:w-[490px] lg:h-[315px] | xl:w-[600px] xl:h-[400px]" ></iframe>
+        <a href="#" class="bg-[#0F101E] border rounded-lg px-10 py-2 transition hover:bg-white hover:text-[#0F101E]">¡Contrata ya!</a>
+    </section>
+    <!--Termina video sect-->
+
+    <!--Inicia sect SAT-->
+    <section class="flex justify-center items-center text-center h-[40vh] | lg:h-[50vh] | 2xl:h-[60vh] ">
+        <div class="p-5 h-full w-full flex justify-center items-center">
+            <div class="text-SAT flex flex-col w-full h-full justify-center items-center text-center | lg:w-1/2 lg:text-start lg:items-start lg:justify-center lg:p-10">
+                <h3 class="font-bold text-2xl mb-5 | md:text-3xl | 2xl:text-5xl">El SAT conoce todos tus movimientos</h3>
+                <p class="md:text-xl | 2xl:text-2xl">Muchas empresas navegan a ciegas, sin registros claros de sus operaciones. Imagina el huracán que desataría una auditoría del SAT. <br>
+                    Más allá de los problemas con la autoridad, la falta de control te está costando millones. ¿Estás dispuesto a seguir perdiendo?</p>
+            </div>
+            <div class="imagen-SAT hidden | lg:flex lg:justify-center lg:items-center lg:w-1/2 ">
+                <img class="w-[55%]" src="img/img-sat.jpg" alt="sat">
+            </div>
+        </div>
+    </section>
+    <!--Termina sect SAT-->
+
+    <!--Inicia sect ventajas-->
+    <section class="flex flex-col justify-center items-center  bg-white text-black">
+        <h3 class="font-bold text-4xl p-10">VENTAJAS</h3>
+        <div class="flex flex-col justify-center items-center text-center h-full w-full p-5 | lg:flex lg:flex-row  lg:p-10 lg:items-center lg:justify-center lg:text-start ">
+            <div class="flex flex-col gap-5 text-start w-full px-10 mb-5">
+                <div class="flex items-center gap-5">
+                    <div>
+                        <img src="img/p1.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>Ahorra tiempo y costos</h6>
+                        <p>Automatiza para crecer.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div>
+                        <img src="img/p2.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>Protege tu inventario</h6>
+                        <p>Evita pérdidas por "robo hormiga".</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div>
+                        <img src="img/p3.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>Evita multas</h6>
+                        <p>Cumple y ahorra.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden | lg:flex"></div>
+            <div class="flex flex-col gap-5 text-start w-full px-10">
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-5">
+                        <img src="img/p4.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>2 clics: Cumple SAT</h6>
+                        <p>Ahorra tiempo.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div>
+                        <img src="img/p5.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>Semáforo de documentos</h6>
+                        <p>Viajes sin problemas.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div>
+                        <img src="img/p6.png" alt="">
+                    </div>
+                    <div class="[&>h6]:font-bold">
+                        <h6>Más rendimiento</h6>
+                        <p>Control logístico.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!--Termina sect ventajas-->
+
+    <!--Inicia sect contact-->
+    <footer id="form" class=" text-white py-10 bg-[#000000] mt-10">
+        <div class="formulario-container mx-auto px-4 ">
+            <h1 class="text-4xl mb-5 px-5 text-center">Contacta a nuestro equipo</h1>
+            <p class="text-md mb-5 px-5 text-center pb-10 | lg:px-40">
+                ¿Tienes dudas sobre cómo trabajamos? Nuestro equipo está disponible 24/7
+                para ayudarte. Chatea con nosotros y súmate a la experiencia en menos de
+                5 minutos.
+            </p>
+            
+            <div class="px-10">
+                <form id="miFormulario">
+                  <div class="space-y-4 lg:space-y-0 lg:space-x-5 lg:flex">
+                    <div class="flex flex-col flex-grow">
+                      <label for="nombre" class="block text-start mb-1"
+                        >Nombre</label
+                      >
+                      <input
+                        class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        type="text"
+                        id="nombre"
+                        placeholder="Nombre"
+                        required
+                      />
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                      <label for="apellido" class="block text-start mb-1"
+                        >Apellido</label
+                      >
+                      <input
+                        class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        type="text"
+                        id="apellido"
+                        placeholder="Apellido"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col mt-4">
+                    <label for="email" class="block text-start mb-1"
+                      >Correo Electrónico</label
+                    >
+                    <input
+                      class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      type="email"
+                      id="email"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col mt-4">
+                    <label for="phone" class="block text-start mb-1">Teléfono</label>
+                    <input
+                      class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      type="tel"
+                      id="phone"
+                      placeholder="Tu teléfono"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col mt-4">
+                    <label for="message" class="block text-start mb-1">Mensaje</label>
+                    <textarea
+                      class="bg-[#0F101E] rounded-md pl-4 w-full py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      id="message"
+                      placeholder="Escribe tu mensaje aquí"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+        
+                  <button
+                    class="cursor-pointer transition hover:bg-[#0F101E] hover:text-white bg-white text-black px-8 py-2 rounded-lg mt-8 w-full"
+                    type="submit"
+                  >
+                    Enviar mensaje
+                  </button>
+                </form>
+              </div>
+        </div>
+    </footer>
+
+    <!--Termina sect contact-->
+
+    <script>
+        document
+            .getElementById("miFormulario")
+            .addEventListener("submit", function (event) {
+                event.preventDefault(); // Evita el envío tradicional del formulario
+
+                // Obtener los valores del formulario
+                let name = document.getElementById("nombre").value;
+                let lastName = document.getElementById("apellido").value;
+                let email = document.getElementById("email").value;
+                let phone = document.getElementById("phone").value;
+                let message = document.getElementById("message").value;
+
+                //Validación básica
+                if (!name || !email || !phone || !message) {
+                    alert("Por favor, completa todos los campos.");
+                    return;
+                }
+
+                // Número de WhatsApp al que quieres enviar el mensaje
+                let numeroWhatsApp = "522292155125"; // Reemplaza con el número de destino
+
+                // Mensaje
+                let mensaje = `👋 Hola, mi nombre es ${name} ${lastName}. 📧 Mi correo es ${email}. 📱 Mi número es ${phone}. ${message}.`;
+
+                // Codificar el mensaje para URL
+                let mensajeCodificado = encodeURIComponent(mensaje);
+
+                // Crear la URL de WhatsApp
+                let url = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+
+                // Redirigir a la URL de WhatsApp
+                window.location.href = url;
+            });
+    </script>
+</body>
+</html>
