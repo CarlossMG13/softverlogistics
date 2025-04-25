@@ -13,7 +13,7 @@
 <body class="bg-black text-white">
 
     <!--Inicia nav-->
-    <nav class="flex justify-between items-center py-6 px-4 lg:px-8 text-white">
+    <nav class="flex justify-between items-center py-3 px-4 lg:px-8 text-white">
         <div 
             data-aos="fade-down"
             data-aos-duration="500"
@@ -40,20 +40,34 @@
     <!--Termina nav-->
 
     <!--Inicia banner-->
-    <section class="flex justify-center items-center flex-col text-center h-[90vh] ">
-        <h1 
+    <section class="flex justify-center items-center flex-col text-center h-[90vh] relative bg-cover bg-center bg-no-repeat bg-fixed" style="background: url('vids/vid-banner.mp4');">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
+            <video
+                src="vids/vid-banner.mp4" autoplay
+                loop
+                muted
+                playsinline
+                class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+            ></video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+        </div>
+        <h1
             data-aos="fade-up"
-            class="text-4xl font-bold mb-5 | lg:text-6xl | 2xl:text-8xl">SOFTVER LOGISTICS</h1>
-        <p 
+            class="text-4xl font-bold mb-5 | lg:text-6xl | 2xl:text-8xl z-10"
+        >SOFTVER LOGISTICS</h1>
+        <p
             data-aos="fade-up"
-            class="px-5 mb-10 | lg:text-2xl lg:px-10">Somos la mejor opción para tener un control total de tu empresa de transporte y/o logística. Gestiona con eficiencia, elige Softver Logistics.</p>
-        <div class="flex gap-5 [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-lg [&>a]:transition | lg:[&>a]:px-10 lg:[&>a]:py-3" >
-            <a 
+            class="px-5 mb-10 | lg:text-2xl lg:px-10 z-10"
+        >Somos la mejor opción para tener un control total de tu empresa de transporte y/o logística. Gestiona con eficiencia, elige Softver Logistics.</p>
+        <div class="flex gap-5 [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-lg [&>a]:transition | lg:[&>a]:px-10 lg:[&>a]:py-3 z-10" >
+            <a
                 data-aos="fade-right"
-                href="#vid" class="bg-[#FFFFFF] text-black hover:bg-black hover:text-white hover:border">Conoce más</a>
+                href="#vid" class="bg-[#FFFFFF] text-black hover:bg-black hover:text-white hover:border"
+            >Conoce más</a>
             <a
                 data-aos="fade-left"
-                href="#form" class="border hover:bg-white hover:text-black">Cuéntanos tu proyecto</a>
+                href="#form" class="border hover:bg-white hover:text-black"
+            >Cuéntanos tu proyecto</a>
         </div>
     </section>
     <!--Termina banner-->
