@@ -13,41 +13,47 @@
 <body class="bg-black text-white">
 
     <!--Inicia nav-->
-    <nav class="flex justify-between items-center py-3 px-4 lg:px-8 text-white">
-        <div 
-            data-aos="fade-down"
-            data-aos-duration="500"
-            class="logo">
-            <img class="w-24 lg:w-32" src="img/logo.png" alt="Logo">
-        </div>
-        <div 
-            data-aos="fade-down"
-            data-aos-duration="500"
-            class="hidden lg:flex lg:text-center">
-            <ul class="flex gap-12 text-white">
-                <li><a href="#" class="transition hover:text-[#0056D2]">Inicio</a></li>
-                <li><a href="#services" class="transition hover:text-[#0056D2]">Softver</a></li>
-            </ul>
-        </div>
-        <div 
-            data-aos="fade-down"
-            data-aos-duration="500"
-            class="flex gap-4 items-center">
-            <a href="http://logistic.softver.mx/vista/login/login.html"  class="px-5 py-2 text-[#0056D2] border border-[#0056D2] rounded-md font-bold transition hover:bg-[#0056D2] hover:text-white" target="_blank">Log-in</a>
-            <a href="#form" class="px-5 py-2 bg-[#0056D2] text-white rounded-md font-bold transition hover:scale-105">Contáctanos</a>
-        </div>
-    </nav>
+    <nav
+    class="flex fixed top-0 left-0 w-full justify-between items-center py-3 px-4 lg:px-8 text-white z-20 bg-opacity-90 bg-[#000000]"
+>
+    <div
+        data-aos="fade-down"
+        data-aos-duration="500"
+        class="logo"
+    >
+        <img class="w-24 lg:w-32" src="img/logo.png" alt="Logo">
+    </div>
+    <div class="lg:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none focus:ring-2 focus:ring-white">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path id="menu-icon" fill-rule="evenodd" clip-rule="evenodd" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18V6H3v2z"/>
+                <path id="close-icon" class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.707 4.293a1 1 0 0 0-1.414 0L12 10.586 6.707 5.293a1 1 0 0 0-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 0 0 1.414 1.414L12 13.414l5.293 5.293a1 1 0 0 0 1.414-1.414L13.414 12l5.293-5.293a1 1 0 0 0 0-1.414z"/>
+            </svg>
+        </button>
+    </div>
+    <div
+        id="menu-items"
+        class="hidden lg:flex lg:text-center"
+    >
+        <ul class="flex flex-col items-end lg:flex-row gap-4 lg:gap-12 text-white">
+            <li><a href="#inicio" class="transition hover:text-[#0056D2]">Inicio</a></li>
+            <li><a href="#services" class="transition hover:text-[#0056D2]">Softver</a></li>
+            <li><a href="http://logistic.softver.mx/vista/login/login.html" class="lg:px-5 lg:py-2 text-[#0056D2] lg:border lg:border-[#0056D2] lg:rounded-md font-bold lg:transition lg:hover:bg-[#0056D2] hover:text-white" target="_blank">Log-in</a></li>
+            <li><a href="#form" class="lg:px-5 lg:py-2 lg:bg-[#0056D2] text-white lg:rounded-md font-bold lg:transition lg:hover:scale-105">Contáctanos</a></li>
+        </ul>
+    </div>
+</nav>
     <!--Termina nav-->
 
     <!--Inicia banner-->
-    <section class="flex justify-center items-center flex-col text-center h-[90vh] relative bg-cover bg-center bg-no-repeat bg-fixed" style="background: url('vids/vid-banner.mp4');">
+    <section id="inicio" class="flex justify-center items-center flex-col text-center h-[90vh] relative bg-cover bg-center bg-no-repeat bg-fixed" style="background: url('vids/vid-banner.mp4');">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
             <video
                 src="vids/vid-banner.mp4" autoplay
                 loop
                 muted
                 playsinline
-                class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+                class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover max-w-full max-h-full"
             ></video>
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
         </div>
@@ -88,7 +94,7 @@
                     Más allá de los problemas con la autoridad, la falta de control te está costando millones. ¿Estás dispuesto a seguir perdiendo?</p>
             </div>
             <div data-aos="fade-left" class="imagen-SAT flex justify-center items-center w-full lg:w-1/2">
-                <img data-aos="flip-up" data-aos-duration="1000" class="w-1/2 md:w-1/3 lg:w-3/4 xl:w-3/4" src="img/img-sat.jpg" alt="sat">
+                <img data-aos="flip-up" data-aos-duration="1000" class="w-1/2 md:w-1/3 lg:w-3/4 xl:w-3/4 max-w-full" src="img/img-sat.jpg" alt="sat">
             </div>
         </div>
     </section>
@@ -101,7 +107,7 @@
             <div class="flex flex-col items-start gap-5 pb-5 pl-8 | lg:items-center lg:pb-0 lg:pl-0 lg:w-1/3 | xl:gap-30">
                 <div data-aos="fade-right" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p1.png" alt="">
+                        <img class="max-w-full" src="img/p1.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>Ahorra tiempo y costos</h3>
@@ -110,7 +116,7 @@
                 </div>
                 <div data-aos="fade-right" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p2.png" alt="">
+                        <img class="max-w-full" src="img/p2.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>Protege tu inventario</h3>
@@ -119,7 +125,7 @@
                 </div>
                 <div data-aos="fade-right" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p3.png" alt="">
+                        <img class="max-w-full" src="img/p3.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>Evita multas</h3>
@@ -128,12 +134,12 @@
                 </div>
             </div>
             <div data-aos="fade-up" class="hidden lg:flex lg:justify-center lg:items-center lg:w-1/3 ">
-                <img src="img/banner.png" alt="banner_logistics" class="w-100">
+                <img src="img/banner.png" alt="banner_logistics" class="w-full max-w-full">
             </div>
             <div class="flex flex-col items-start gap-5 pl-8 | lg:items-center lg:flex-grow lg:w-1/3| xl:gap-30">
                 <div data-aos="fade-left" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p1.png" alt="">
+                        <img class="max-w-full" src="img/p1.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>2 clics: Cumple SAT</h3>
@@ -142,7 +148,7 @@
                 </div>
                 <div data-aos="fade-left" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p2.png" alt="">
+                        <img class="max-w-full" src="img/p2.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>Semáforo de documentos</h3>
@@ -151,7 +157,7 @@
                 </div>
                 <div data-aos="fade-left" class="flex gap-3">
                     <div class="img">
-                        <img src="img/p3.png" alt="">
+                        <img class="max-w-full" src="img/p3.png" alt="">
                     </div>
                     <div class="text flex flex-col [&>h3]:font-bold [&>h3]:text-xl [&>p]:text-lg">
                         <h3>Más rendimiento</h3>
@@ -164,84 +170,88 @@
     <!--Termina sect ventajas-->
 
     <!--Inicia sect contact-->
-    <footer id="form" class=" text-white py-10 bg-[#000000] mt-10">
-        <div class="formulario-container mx-auto px-4 ">
+    <footer id="form" class=" text-white py-10 bg-[#000000] mt-10 overflow-hidden">
+        <div class="formulario-container mx-auto px-4 w-full">
             <h1 data-aos="fade-down" class="text-4xl mb-5 px-5 text-center">Contacta a nuestro equipo</h1>
             <p data-aos="fade-down" class="text-md mb-5 px-5 text-center pb-10 | lg:px-40">
                 ¿Tienes dudas sobre cómo trabajamos? Nuestro equipo está disponible 24/7
                 para ayudarte. Chatea con nosotros y súmate a la experiencia en menos de
                 5 minutos.
             </p>
-            
-            <div class="px-10">
-                <form id="miFormulario">
-                  <div class="space-y-4 lg:space-y-0 lg:space-x-5 lg:flex">
-                    <div data-aos="fade-right" class="flex flex-col flex-grow">
-                      <label for="nombre" class="block text-start mb-1"
-                        >Nombre</label
-                      >
-                      <input
-                        class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        type="text"
-                        id="nombre"
-                        placeholder="Nombre"
-                        required
-                      />
-                    </div>
-                    <div data-aos="fade-right" class="flex flex-col flex-grow">
-                      <label for="apellido" class="block text-start mb-1"
-                        >Apellido</label
-                      >
-                      <input
-                        class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        type="text"
-                        id="apellido"
-                        placeholder="Apellido"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div data-aos="fade-right" class="flex flex-col mt-4">
-                    <label for="email" class="block text-start mb-1"
-                      >Correo Electrónico</label
-                    >
-                    <input
-                      class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      type="email"
-                      id="email"
-                      placeholder="tucorreo@ejemplo.com"
-                      required
-                    />
-                  </div>
-                  <div data-aos="fade-right" class="flex flex-col mt-4">
-                    <label for="phone" class="block text-start mb-1">Teléfono</label>
-                    <input
-                      class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      type="tel"
-                      id="phone"
-                      placeholder="Tu teléfono"
-                      required
-                    />
-                  </div>
-                  <div data-aos="fade-right" class="flex flex-col mt-4">
-                    <label for="message" class="block text-start mb-1">Mensaje</label>
-                    <textarea
-                      class="bg-[#0F101E] rounded-md pl-4 w-full py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      id="message"
-                      placeholder="Escribe tu mensaje aquí"
-                      rows="4"
-                      required
-                    ></textarea>
-                  </div>
-        
-                  <button
-                    class="cursor-pointer transition hover:bg-[#0F101E] hover:text-white bg-white text-black px-8 py-2 rounded-lg mt-8 w-full"
-                    type="submit"
-                  >
-                    Enviar mensaje
-                  </button>
-                </form>
-              </div>
+            <div class="px-2 flex items-center justify-center gap-5 | sm:px-20 | md-px-30 | lg:px-10 ">
+                <div class="w-full lg:w-1/2 ">
+                    <form id="miFormulario">
+                        <div class="space-y-4 lg:space-y-0 lg:space-x-5 lg:flex">
+                            <div data-aos="fade-right" class="flex flex-col">
+                                <label for="nombre" class="block text-start mb-1"
+                                    >Nombre</label
+                                >
+                                <input
+                                    class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    type="text"
+                                    id="nombre"
+                                    placeholder="Nombre"
+                                    required
+                                />
+                            </div>
+                            <div data-aos="fade-right" class="flex flex-col flex-grow">
+                                <label for="apellido" class="block text-start mb-1"
+                                    >Apellido</label
+                                >
+                                <input
+                                    class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    type="text"
+                                    id="apellido"
+                                    placeholder="Apellido"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" class="flex flex-col mt-4">
+                            <label for="email" class="block text-start mb-1"
+                                >Correo Electrónico</label
+                            >
+                            <input
+                                class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                type="email"
+                                id="email"
+                                placeholder="tucorreo@ejemplo.com"
+                                required
+                            />
+                        </div>
+                        <div data-aos="fade-right" class="flex flex-col mt-4">
+                            <label for="phone" class="block text-start mb-1">Teléfono</label>
+                            <input
+                                class="bg-[#0F101E] h-10 rounded-md pl-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                type="tel"
+                                id="phone"
+                                placeholder="Tu teléfono"
+                                required
+                            />
+                        </div>
+                        <div data-aos="fade-right" class="flex flex-col mt-4">
+                            <label for="message" class="block text-start mb-1">Mensaje</label>
+                            <textarea
+                                class="bg-[#0F101E] rounded-md pl-4 w-full py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                id="message"
+                                placeholder="Escribe tu mensaje aquí"
+                                rows="4"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            class=" flex gap-5 items-center justify-center cursor-pointer transition hover:bg-[#0F101E] hover:text-white bg-white text-black px-8 py-2 rounded-lg mt-8 w-full [&>img]:w-5 [&>img]:hover:invert"
+                            type="submit"
+                        >
+                            Enviar mensaje <img  src="img/whatsapp-128-svgrepo-com.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div data-aos="fade-left" class="hidden lg:flex lg:justify-center lg:items-center lg:w-1/2 lg:h-full overflow-hidden">
+                    <img src="img/form-img.jpg" alt="form" class="w-full max-w-full h-auto block">
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -281,6 +291,20 @@
                 // Redirigir a la URL de WhatsApp
                 window.location.href = url;
             });
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.getElementById('menu-items');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('hidden');
+            menuItems.classList.toggle('flex');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
     </script>
 
     <script>
