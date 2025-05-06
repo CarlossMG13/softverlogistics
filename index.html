@@ -79,7 +79,7 @@
     <!--Inicia banner-->
     <section
       id="inicio"
-      class="flex justify-center items-center flex-col text-center h-[90vh] relative bg-cover bg-center bg-no-repeat bg-fixed"
+      class="flex justify-center items-center flex-col text-center h-[90vh] relative bg-cover bg-center bg-no-repeat bg-fixed | sm:h-screen"
       style="background: url('vids/vid-banner.mp4')"
     >
       <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
@@ -107,16 +107,16 @@
         Logistics.
       </p>
       <div
-        class="flex gap-5 [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-lg [&>a]:transition | lg:[&>a]:px-10 lg:[&>a]:py-3 z-10"
+        class="flex px-5 gap-5 [&>a]:px-5 [&>a]:py-2 [&>a]:rounded-lg [&>a]:transition | lg:[&>a]:px-10 lg:[&>a]:py-3 z-10"
       >
         <a
-          data-aos="fade-right"
+          data-aos="fade-up"
           href="#vid"
           class="bg-[#FFFFFF] text-black hover:bg-black hover:text-white hover:border"
           >Conoce más</a
         >
         <a
-          data-aos="fade-left"
+          data-aos="fade-up"
           href="#form"
           class="border hover:bg-white hover:text-black"
           >Cuéntanos tu proyecto</a
@@ -161,12 +161,12 @@
           class="text-SAT flex flex-col w-full h-full justify-center items-center text-center | lg:w-1/2 lg:text-start lg:items-start lg:justify-center lg:p-10"
         >
           <h3
-            data-aos="fade-right"
+            data-aos="fade-up"
             class="font-bold text-2xl mb-5 | md:text-3xl | 2xl:text-5xl"
           >
             El SAT conoce todos tus movimientos
           </h3>
-          <p data-aos="fade-right" class="md:text-xl | 2xl:text-2xl mb-10">
+          <p data-aos="fade-up" class="md:text-xl | 2xl:text-2xl mb-10">
             Muchas empresas navegan a ciegas, sin registros claros de sus
             operaciones. Imagina el huracán que desataría una auditoría del SAT.
             <br />
@@ -175,7 +175,7 @@
           </p>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           class="imagen-SAT flex justify-center items-center w-full lg:w-1/2"
         >
           <img
@@ -201,7 +201,7 @@
         <div
           class="flex flex-col items-start gap-5 pb-5 pl-8 | lg:items-center lg:pb-0 lg:pl-0 lg:w-1/3 | xl:gap-30"
         >
-          <div data-aos="fade-right" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p1.png" alt="" />
             </div>
@@ -212,7 +212,7 @@
               <p>Automatiza para crecer.</p>
             </div>
           </div>
-          <div data-aos="fade-right" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p2.png" alt="" />
             </div>
@@ -223,7 +223,7 @@
               <p>Evita pérdidas por "robo hormiga".</p>
             </div>
           </div>
-          <div data-aos="fade-right" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p3.png" alt="" />
             </div>
@@ -248,7 +248,7 @@
         <div
           class="flex flex-col items-start gap-5 pl-8 | lg:items-center lg:flex-grow lg:w-1/3| xl:gap-30"
         >
-          <div data-aos="fade-left" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p1.png" alt="" />
             </div>
@@ -259,7 +259,7 @@
               <p>Ahorra tiempo.</p>
             </div>
           </div>
-          <div data-aos="fade-left" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p2.png" alt="" />
             </div>
@@ -270,7 +270,7 @@
               <p>Viajes sin problemas.</p>
             </div>
           </div>
-          <div data-aos="fade-left" class="flex gap-3">
+          <div data-aos="fade-up" class="flex gap-3">
             <div class="img">
               <img class="max-w-full" src="img/p3.png" alt="" />
             </div>
@@ -309,7 +309,7 @@
           <div class="w-full lg:w-1/2">
             <form id="miFormulario">
               <div class="space-y-4 lg:space-y-0 lg:space-x-5 lg:flex">
-                <div data-aos="fade-right" class="flex flex-col">
+                <div data-aos="fade-up" class="flex flex-col">
                   <label for="nombre" class="block text-start mb-1"
                     >Nombre</label
                   >
@@ -321,7 +321,7 @@
                     required
                   />
                 </div>
-                <div data-aos="fade-right" class="flex flex-col flex-grow">
+                <div data-aos="fade-up" class="flex flex-col flex-grow">
                   <label for="apellido" class="block text-start mb-1"
                     >Apellido</label
                   >
@@ -334,7 +334,7 @@
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" class="flex flex-col mt-4">
+              <div data-aos="fade-up" class="flex flex-col mt-4">
                 <label for="email" class="block text-start mb-1"
                   >Correo Electrónico</label
                 >
@@ -346,7 +346,7 @@
                   required
                 />
               </div>
-              <div data-aos="fade-right" class="flex flex-col mt-4">
+              <div data-aos="fade-up" class="flex flex-col mt-4">
                 <label for="phone" class="block text-start mb-1"
                   >Teléfono</label
                 >
@@ -358,7 +358,7 @@
                   required
                 />
               </div>
-              <div data-aos="fade-right" class="flex flex-col mt-4">
+              <div data-aos="fade-up" class="flex flex-col mt-4">
                 <label for="message" class="block text-start mb-1"
                   >Mensaje</label
                 >
@@ -381,7 +381,7 @@
             </form>
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             class="hidden lg:flex lg:justify-center lg:items-center lg:w-1/2 lg:h-full overflow-hidden"
           >
             <img
@@ -397,7 +397,7 @@
       >
         <img src="img/logo.png" class="w-30" alt="logo-softver" />
         <p id="fade-up" class="text-sm font-semibold">
-          Copyright ©2025 Softver Company
+          Copyright © 2025 Softver MX
         </p>
       </div>
     </footer>
